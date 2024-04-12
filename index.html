@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+    <title>Imersão Dev</title>
+</head>
+
+<body>
+    <h1>Rocket league Champion Ship</h1>
+
+    <table style="width:100%">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Gols</th>
+                <th>Assistências</th>
+                <th>Vitórias</th>
+                <th>Empates</th>
+                <th>Derrotas</th>
+                <th>Pontos</th>
+                <th colspan="8">Ações</th>
+            </tr>
+        </thead>
+        <tbody id="tabelaJogadores">
+
+        </tbody>
+    </table>
+    <div id="mostrarFormularioInsercao">
+        <button id="inserirJogador" type="button" class="botaoExibicao" onClick="exibirFormulario()">Inserir mais
+            Jogadores</button>
+        <button id="fecharFormulario" type="button" class="botaoExibicao" style="display: none"
+            onClick="fecharFormulario()">Fechar formulário</button>
+    </div>
+    <div id="divAdicionaJogador">
+        <form>
+            <input type="text" id="nomeJogador" placeholder="Nome do jogador" class="elemento" onkeypress="handleKeyPress(event)"><br>
+            <button id="inserirJogadorBotao" type="button" class="elemento" onClick="adicionarJogador()">Inserir</button>
+        </form>
+    </div>
+    <div id="divEditaJogador">
+        <form>
+            <input type="text" id="nomeJogadorSalvo" placeholder="Nome do jogador" class="elemento"><br>
+            <button type="button" class="elemento" onClick="editarNomeJogador()">Editar</button>
+        </form>
+    </div>
+
+    <script>
+        function handleKeyPress(event) {
+            if (event.key === "Enter") {
+                event.preventDefault(); 
+                adicionarJogador(); 
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+* {
+    text-align: center;
+  }
+  
+  body {
+    font-family: "Roboto Mono", monospace;
+    min-height: 100vh;
+    background-image: url("https://s2.glbimg.com/NXiDLEredeySoDlyiAM-YNOxF0Y=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2021/G/s/lQcQwCTzCRHn8PZYcglA/rlcs-rocket-league.jpg");
+    background-color: #111;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+  }
+  
+  .page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+  }
+  
+  .page-logo {
+    width: 200px;
+  }
+  
+  .alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  table {
+    border: 2px solid white;
+    border-collapse: collapse;
+  }
+  
+  h1 {
+    color: white;
+  }
+  
+  th,
+  tr,
+  td {
+    border: solid 1px white;
+    color: white;
+  }
+  
+  button {
+    background-color: #ff0000;
+    color: #f6f6f6;
+  }
+  
+  #divAdicionaJogador,
+  #divEditaJogador {
+    display: none;
+  }
+  
+  #mostrarFormularioInsercao {
+    margin-top: 10px;
+  }
+  
+  .elemento {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  .botaoExibicao {
+    font-size: 20px;
+  }
+  
